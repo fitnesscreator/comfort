@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Your Life</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(to right, #000, #1a1a1a);
+    }
+
+    .container {
+      text-align: center;
+      color: #fff;
+    }
+
+    .logo {
+      width: 70px;
+      opacity: 0;
+      animation: fadeInLogo 5s forwards;
+      margin-bottom: 40px;
+    }
+
+    @keyframes fadeInLogo {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .quote {
+      font-size: 3rem;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeInQuote 5s forwards, letterSpacing 8s forwards;
+      letter-spacing: 0px;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeInQuote {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes letterSpacing {
+      0% {
+        letter-spacing: 0px;
+      }
+      100% {
+        letter-spacing: 10px;
+      }
+    }
+
+    .question {
+      margin-top: 20px;
+      font-size: 2rem;
+      opacity: 0;
+      animation: fadeInQuestion 2s 6s forwards;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 30px;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: normal;
+      font-size: 1.8rem;
+      transition: background-color 0.3s, color 0.3s;
+      opacity: 0;
+      animation: fadeInQuestion 2s 7s forwards;
+    }
+
+    @keyframes fadeInQuestion {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 50px;
+        margin-bottom: 30px;
+      }
+
+      .quote {
+        font-size: 1rem;
+        letter-spacing: 5px;
+        margin-bottom: 15px;
+      }
+
+      .question {
+        font-size: 1rem;
+        margin-top: 15px;
+      }
+
+      .button {
+        margin-top: 20px;
+        padding: 8px 20px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.ibb.co/TBqTzr4/Bella-15.png" alt="Logo" class="logo">
+    <div class="quote">COMFORT KILLS DREAMS</div>
+    <div class="question">Ready to Transform?</div>
+    <a href="main.html" class="button">Get Started</a>
+  </div>
+  
+  <script>
+    // Refresh the page if the user navigates back
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    });
+</script>
+</body>
+</html>
